@@ -27,7 +27,9 @@ function main() {
             console.error("Terjadi error:", error);
         } else {
             console.log(
-                `Respon dari Server -> Nama: ${response.name}, Email: ${response.email}`
+                `Respon dari Server -> Nama: ${response.name}, ` +
+                `Email: ${response.email}, ` +
+                `Telepon: ${response.phone}`
             );
         }
 

@@ -1,4 +1,3 @@
-
 package main
 
 import (
@@ -25,12 +24,14 @@ func (s *server) GetUserProfile(
 		return &pb.UserResponse{
 			Name:  "Budi Santoso",
 			Email: "budi@universitas.ac.id",
+			Phone: "081234567890",
 		}, nil
 	}
 
 	return &pb.UserResponse{
 		Name:  "User Tidak Ditemukan",
 		Email: "-",
+		Phone: "-",
 	}, nil
 }
 
